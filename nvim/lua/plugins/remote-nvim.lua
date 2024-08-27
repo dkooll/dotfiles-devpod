@@ -37,7 +37,7 @@ return {
             ("nvim --server localhost:%s --remote-ui"):format(port),
             function(exit_code)
               if exit_code ~= 0 then
-                vim.notify(("Local client failed with exit code %s"):format(exit_code), vim.log.levels.ERROR)
+                vim.notify(("LLocal client failed with exit code %s"):format(exit_code), vim.log.levels.ERROR)
               end
             end,
             {
